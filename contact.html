@@ -3,70 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE KIDDIE COUTURE</title>
+    <title>THE KIDDIE COUTURE - Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/clothes.png">
 </head>
 <body>
-    <h1>CONTACT US</h1>
-    <ul>
-     
-      <li><p><a href="index.html">Home</a></p></li>
-      <li><p><a href="index.html">About TKC</a></p></li>
-      <li><p><a href="dress.html">Our Dress</a></p></li>
-      <li><p><a href="hours.html">Store Hours</a></p></li>
-   
-  </ul>
-  <figure>
-  <img src="img/terricks-noah-n9R0MN3XGvY-unsplash.jpg" alt="" height="500px" width="500px" loading="lazy" title="A 4 year old Kid Wear a western style shirt-pant ">
-  <figcaption>A Thick Blue Color Shirt With Sky Blue Color Pant</figcaption>
-  </figure>
-  <p>
-  <h2>Our Contact Form</h2></p>
-  <form action="https://httpbin.org/get" ,method="get">
-    <fieldset>
-     <legend>Sends Us A Message</legend>  
-     <br> 
-     <p>
-     <label for="name">Name:</label>
-     <input type="text" name="name" id="name" placeholder="your name" required>
-    </p>
-    <p>
-     <label for="email">Email:</label>
-     <input type="text" name="email" id="email" placeholder="your email" required>
-    </p>
-    <p>
-        <label for="pass">Password:</label>
-        <input type="password" name="pass" id="pass" placeholder="your password" required>
-    </p>
-    <p>
-        <label for="num">Phonenumber:</label>
-        <input type="tel" name="num" id="num" placeholder="your phnum" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
-    </p>
-    <p>
-    <label for="male">Birth Year of the child&nbsp;:&nbsp;</label>
-    <input type="number" min="2015" max="2025" value="2024" step="1">
-    </p>
-    <p>
-    <input type="radio" name="gender" id="male" value="male">
-    <label for="male">Boy</label>
-    <input type="radio" name="gender" id="female" value="female">
-    <label for="female">Girl</label>
-</p>
-    <label for="msg">Your Message:</label>
-    <p>
-        <textarea  name="msg" id="msg" cols="30" rows="10" placeholder="Type your message here" required ></textarea>
-    </p>
-    </fieldset>
-    <br>
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-  </form>
-<p><h2>Our Location</h2>
-555 Kiddie Couture<br>Avinashi Rd <br>next to Nava India Road.</p>
-<p>Phone:<a href="tel:+555-555-5555">555-555-5555</a></p>
-<p><a href="#">Backtotop</a></p>
-<hr>
-<p><h3>Copyright &copy; The Kiddie Couture</h3></p>
+
+    <header>
+        <h1>CONTACT US</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About TKC</a></li>
+                <li><a href="dress.html">Our Dress</a></li>
+                <li><a href="hours.html">Store Hours</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <figure>
+                <img src="img/terricks-noah-n9R0MN3XGvY-unsplash.jpg" 
+                     alt="A 4-year-old Kid wearing a western-style thick blue shirt and sky blue pants"
+                     height="500px" width="500px" loading="lazy">
+                <figcaption>A Thick Blue Shirt With Sky Blue Pants</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Our Contact Form</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Send Us A Message</legend>  
+                    
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </p>
+                    <p>
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" id="pass" placeholder="Your password" required>
+                    </p>
+                    <p>
+                        <label for="num">Phone Number:</label>
+                        <input type="tel" name="num" id="num" placeholder="Your phone number" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </p>
+                    <p>
+                        <label for="birth-year">Birth Year of the Child:</label>
+                        <input type="number" id="birth-year" name="birth-year" min="2015" max="2025" value="2024" step="1">
+                    </p>
+                    <p>
+                        <label>Gender:</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Boy</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Girl</label>
+                    </p>
+                    <p>
+                        <label for="msg">Your Message:</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Our Location</h2>
+            <address>
+                555 Kiddie Couture, Avinashi Rd<br>
+                Next to Nava India Road<br>
+                Phone: <a href="tel:+555-555-5555">555-555-5555</a>
+            </address>
+        </section>
+
+        <p><a href="#">Back to Top</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Kiddie Couture. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
